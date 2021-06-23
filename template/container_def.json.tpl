@@ -27,6 +27,10 @@
       {"name": "ASSET_HOST_URL", "value": "${asset_host_url}"},
       {"name": "AWS_BUCKET_NAME", "value": "${bucket_Name}"},
       {"name": "AWS_REGION", "value": "${region}"},
+
+      {"name": "BLAZER_DATABASE_URL", "value": "${blazer_database_url}"},
+      {"name": "BLAZER_SLACK_WEBHOOK_URL", "value": "${blazer_slack_webhook_url}"},
+
       {"name": "DEFAULT_EMAIL_FOR_PAYMENT", "value": "${default_email_for_payment}"},
       {"name": "DEVISE_SECRET_KEY", "value": "${device_secret_key}"},
       {"name": "ELASTICSEARCH_URL", "value": "${es_url}"},
@@ -35,6 +39,7 @@
       {"name": "EXCEPTION_CHANNEL_ID", "value": "${exception_channel_id}"},
       {"name": "FB_APP_ID", "value": "${fb_app_id}"},
       {"name": "FIREBASE_PROJECT_ID", "value": "${firebase_project_id}"},
+      {"name": "FIREBASE_SENDER_ID", "value": "${firebase_sender_id}"},
       {"name": "FIREBASE_SERVER_KEY", "value": "${firebase_server_key}"},
       {"name": "FORCE_SSL", "value": "true"},
 

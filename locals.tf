@@ -21,7 +21,12 @@ locals {
 
 
   container_template_vars = merge(var.app_environments, {
-    app_name       = "VTENH"
+    app_name = "VTENH"
+
+    # "postgres://avocado:123456@localhost:5432/vtenh"
+    blazer_database_url      = "postgres://${var.rds.postgresql.db_username}:${var.rds.postgresql.db_password}@${module.rds.postgresql_address}:5432/${var.rds.postgresql.db_name}"
+    blazer_slack_webhook_url = var.app_environments.exception_slack_webhook_url
+
     bucket_Name    = var.s3_storage.bucket_name
     container_port = var.container_port
     custom_command = ""
